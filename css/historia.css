@@ -1,0 +1,92 @@
+:root{
+    --font-color1: black;
+    --font-color2: red;
+    --font-color3: white;
+    --font-color4: yellow;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--font-color1);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+header h1{
+    color: var(--font-color2);
+    margin-left: 440px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--font-color2);
+    color: var(--font-color1);
+    border-radius: 15px;
+    text-transform: uppercase;
+    width: 110px;
+    height: 30px;
+    transition: 1.5s;
+}
+header a:hover{
+    color: var(--font-color4);
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+#textbaser h2{
+    color: var(--font-color2);
+    margin-left: 15px;
+}
+#textbaser p{
+    color: var(--font-color3);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 19px;
+}
+@media(max-width: 500px){
+    body{
+        width: 100%;
+    }
+    header{
+     width: 100%;
+     flex-direction: column;
+     justify-content: center;
+    }
+    header h1{
+     margin-left:0;
+     margin-bottom: 15px;
+     font-size: 19px;    /*Para mudar o tamanho da fotne, também era possível usar o comando "text-align: center" para deixar o h1 centralizado em todas as linhas e não precisar diminuir*/
+    }
+    header a{
+    margin-bottom: 30px;
+    padding: 0;
+    margin: 0;
+    }
+    #textbaser{
+        justify-content: center;
+        margin-top: 30px;
+    }
+    #textbaser h2{
+      margin-bottom: 20px;
+      text-align: center;
+      margin-left: 0;
+    }
+    #textbaser p{
+        margin-bottom: 20px;
+    }
+}

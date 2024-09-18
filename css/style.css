@@ -1,0 +1,132 @@
+:root{
+    --font-color1: black;
+    --font-color2: red;
+    --font-color3:white;
+    --font-color4: yellow;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: var(--font-color1);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--font-color1);
+    align-items: center;
+}
+header img{
+    width: 110px;
+    height: 110px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header h1{
+    color: var(--font-color2);
+    text-transform: uppercase;
+}
+header a{
+    display: flex;
+    width: 120px;
+    height: 30px;
+    background-color: var(--font-color2);
+    color: var(--font-color1);
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+header a:hover{
+    color: var(--font-color4);
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+#imagembase img{
+    width: 100%;
+    height: 600px;
+}
+#cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    transition: 2;
+}
+.card{
+    margin-left: 60px;
+    margin-right: 60px;
+    transition:2s;
+}
+.card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+}
+.card h3{
+    display: flex;
+    justify-content: center;
+    color: var(--font-color2);
+    transition: 0.5s;
+}
+.card:hover{
+    transform: scale(1.1);
+    & h3{
+        color: var(--font-color4);
+    }
+}
+footer p{
+    color: var(--font-color2);
+    margin-top: 20px;
+}
+@media (max-width:500px){
+    body{
+        width:100%;
+    }
+    header{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 580px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    header img{
+        width: 300px;
+        height: 300px;
+    }
+    header h1{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    header a{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        width: 145px;
+        height: 45px;
+        font-size:20px;
+        transition: 2s;
+    }
+    header a:hover{
+     transform: scale(1.3);
+    }
+    #imagembase img{
+     width:100%;
+     height:50%;
+    }
+    #cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 40px;
+    }
+}
