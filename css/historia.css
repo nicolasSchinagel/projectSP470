@@ -22,12 +22,13 @@ header{
 }
 header h1{
     color: var(--font-color2);
-    margin-left: 440px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 20px;
 }
 header a{
     display: flex;
