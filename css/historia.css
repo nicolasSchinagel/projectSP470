@@ -22,7 +22,7 @@ header{
 }
 header h1{
     color: var(--font-color2);
-    margin: 0 auto;
+    margin-left: 540px;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
@@ -71,7 +71,7 @@ header a:hover{
     header h1{
      margin-left:0;
      margin-bottom: 15px;
-     font-size: 19px;    /*Para mudar o tamanho da fotne, também era possível usar o comando "text-align: center" para deixar o h1 centralizado em todas as linhas e não precisar diminuir*/
+     font-size: 16px;    /*Para mudar o tamanho da fonte, também era possível usar o comando "text-align: center" para deixar o h1 centralizado em todas as linhas e não precisar diminuir*/
     }
     header a{
     margin-bottom: 30px;
